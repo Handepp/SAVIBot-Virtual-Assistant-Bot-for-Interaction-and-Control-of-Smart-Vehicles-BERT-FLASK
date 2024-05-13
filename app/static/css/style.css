@@ -1,0 +1,693 @@
+/* Responsive 
+410 - 991 = HP
+991 - max = Laptop
+*/
+
+html, p, body {
+  box-sizing: border-box;
+  
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  /*filter: grayscale(100%);*/
+  height: 100vh;
+  font-family: Roboto, sans-serif;
+  margin: 0px;
+  background-color: white;
+  overflow: hidden;
+  background: gainsboro;
+  display:flex;
+  transition: filter 0.5s;
+}
+
+#map { 
+  height: 150px;
+  width: 500px; 
+}
+
+#video { 
+  height: 150px;
+  width: 400px; 
+}
+
+#video_feed{
+
+  right: 5%;
+  top: 5%;
+  height: 150px;
+  width: 500px; 
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* ------------------------- UI Robot ------------------------- */
+
+
+
+.msg {
+  display: flex;
+  align-items: flex-end;
+  margin: 16px 8px 16px 8px;
+}
+
+.savi-title p {
+  display: none;
+  color: white;
+  text-align: center;
+}
+
+#Status_green{
+  right: 22%;
+  top: 7%;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  /*border: 8px solid #355E3B;*/
+  background-color: #008000;
+  border-radius: 50%;
+  opacity: 100%;
+}
+
+#Status_red{
+  right: 25%;
+  top: 7%;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  /*border: 8px solid #355E3B;*/
+  background-color: #ff0000;
+  border-radius: 50%;
+  opacity: 25%;
+}
+
+#relay-status{
+  color: white;
+}
+
+@media screen and (max-device-width: 480px)
+    and (orientation: portrait) {
+      
+
+      
+      .savi-img {
+        width: 200px !important;
+        height: 200px !important;
+        background-size: 100px!important;
+        border-radius: 25%!important;
+        display: none;
+      }
+
+      #Status_green{
+        right: 35%;
+        top: 10%;
+        width: 50px;
+        height: 50px;
+      }
+      
+      #Status_red{
+        right: 55%;
+        top: 10%;
+        width: 50px;
+        height: 50px;
+      }
+
+      .savi-title{
+        margin-bottom:150px!important;
+      }
+    }
+
+
+@media screen and (max-height: 480px) and (orientation: landscape){
+  .savi-img {
+    width: 200px !important;
+    height: 200px !important;
+    background-size: 100px!important;
+    border-radius: 25%!important;
+
+  }
+
+  .savi-title{
+    margin-bottom:175px!important;
+  }
+
+  #Status_green{
+    right: 13%;
+    top: 5%;
+    width: 25px;
+    height: 25px;
+  }
+  
+  #Status_red{
+    right: 17%;
+    top: 5%;
+    width: 25px;
+    height: 25px;
+  }
+}
+
+#savi::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../img/darkblue_1.jpg);
+  background-size: cover; /* Atur sesuai kebutuhan */
+  z-index: -1; /* Pastikan pseudo-element berada di belakang konten utama */
+}
+
+#savi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent; /* Atur sesuai kebutuhan */
+  background-image: url(../img/darkblue_1.jpg);
+  background-size:100%;
+  font-family: Helvetica, sans-serif;
+}
+
+.savi-title{
+  margin-bottom:250px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+.savi-img {
+  width: 200px;
+  height: 200px;
+  margin-right: 50px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 150px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  transform: translatey(15px);
+  animation: float 6s ease-in-out infinite; 
+  cursor: pointer;
+}
+
+@keyframes float {
+	0% {
+		
+		transform: translatey(15px);
+	}
+	50% {
+		
+		transform: translatey(-5px);
+	}
+	100% {
+		
+		transform: translatey(15px);
+	}
+}
+
+@media screen and (max-height: 480px) and (orientation: landscape){
+
+  .savi-bubble {
+    width: 300px!important;
+    margin-bottom: 1px!important;
+    padding: 16px!important;
+  }
+
+  .savi-line {
+    padding-top: 10px!important;
+    height: 1px;
+    width: 100%;
+    opacity: 0.2;
+  }
+
+  .savi-text{
+    font-size: 17px!important;
+    margin-top: 15px!important;
+    line-height: 1.6!important;
+  }
+
+  .savi-input-div {
+    height: 48px!important;
+    border-radius: 15px;
+  }
+
+  .savi-input-message {
+    padding: 8px 48px 8px 16px!important;
+    font-size: 13px!important;
+    flex-grow: 1;
+  }
+  
+}
+
+@media screen and (max-device-width: 480px)
+    and (orientation: portrait) {
+      .savi-bubble {
+        width: 300px!important;
+        margin-bottom: 1px!important;
+        padding: 16px!important;
+      }
+    
+      .savi-line {
+        padding-top: 10px!important;
+        height: 1px;
+        width: 100%;
+        opacity: 0.2;
+      }
+    
+      .savi-text{
+        font-size: 17px!important;
+        margin-top: 15px!important;
+        line-height: 1.6!important;
+      }
+    
+      .savi-input-div {
+        height: 48px!important;
+        border-radius: 15px;
+      }
+    
+      .savi-input-message {
+        padding: 8px 48px 8px 16px!important;
+        font-size: 13px!important;
+        flex-grow: 1;
+      }
+    }
+
+.savi-bubble {
+  width: 500px;
+  margin-bottom: 5px;
+  padding: 16px;
+  border-radius: 15px;
+  border-style: groove;
+  border-color: #dddd;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  box-shadow: 0px 0px 12px #0084F9;
+}
+
+.savi-line {
+  padding-top: 50px;
+  height: 1px;
+  width: 100%;
+  opacity: 0.2;
+}
+
+.savi-text{
+  font-size: 22px;
+  color: #dddd;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+.savi-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.savi-info-name {
+  font-size: 13px;
+  margin-right: 10px;
+  font-weight: bold;
+  color: #dddd;
+}
+
+.savi-info-time {
+  font-size: 13px;
+  color: #dddd;
+}
+
+.savi-input-div {
+  height: 48px;
+  border-radius: 15px;
+  border-style: groove;
+  border-color: #dddd;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  display: flex;
+  box-shadow: 0px 0px 12px #0084F9;
+}
+
+.savi-input-message {
+  padding: 8px 48px 8px 16px;
+  font-size: 15px;
+  flex-grow: 1;
+  border: none;
+  background-color: transparent;
+  color: #dddd;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+.savi-input-message:focus {
+  outline: none;
+}
+
+.savi-input-send {
+  background: transparent;
+  width: 48px;
+  height: 48px;
+  right: 0%;
+  border: none;
+  cursor: pointer;
+}
+
+.savi-input-send svg {
+  fill: #dddd;
+  margin: 11px 8px;
+}
+
+.savi-input-send svg:hover {
+  fill-opacity: 50%;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #dddd;
+  opacity: 35%; /* Firefox */
+}
+
+.savi-chat {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1px;
+  
+}
+.savi-chat::-webkit-scrollbar {
+  width: 6px;
+}
+.savi-chat::-webkit-scrollbar-track {
+  background: #ddd;
+}
+.savi-chat::-webkit-scrollbar-thumb {
+  background: #bdbdbd;
+}
+
+.savi-chat {
+  background-color: transparent
+  
+}
+
+/* microphone robot */
+
+.output-voice{
+  position: relative;
+  margin-top:35px;
+  float: center;
+  width: 950px;
+  height: 80px; /* Should be removed. Only for demonstration */
+  background-color: transparent;
+  border-radius: 15px;
+  border-style: groove;
+  border-color: #dddd;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.output-voice p{
+  padding: 8px 0px 0px 16px;
+  font-size: 30px;
+  flex-grow: 1;
+  border: none;
+  background-color: transparent;
+  color: #dddd;
+}
+
+#voicesavi{
+  position:absolute;
+  bottom: 15%;
+  left: 47%;
+}
+
+.mic{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+	border: none;
+  padding: 0;
+  border-radius: 100%;
+  width: 125px;
+  height: 125px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+}
+
+.pulse-ring {
+  content: '';
+  width: 125px;
+  height: 125px;
+	background: red;
+  border: 5px solid red;
+  border-radius: 50%;
+  position: absolute;
+  animation: pulsate infinite 1.5s;
+}
+
+#voicesavi .pulse-ring{
+  top: -5px;
+  left: -5px;
+}
+
+.pulse-ring.delay{
+	animation-delay: 1s;
+}
+
+@keyframes pulsate {
+  0% {
+    -webkit-transform: scale(1, 1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1.3, 1.3);
+    opacity: 0;
+  }
+}
+
+@media screen and (max-height: 480px) and (orientation: landscape){
+  .btn {
+    border-radius: 100%;
+    width: 85px;
+    height: 85px;
+  }
+
+  .pulse-ring {
+    content: '';
+    width: 85px;
+    height: 85px;
+    background: red;
+    border: 5px solid red;
+    border-radius: 50%;
+    position: absolute;
+    animation: pulsate infinite 1.5s;
+  }
+  
+  #voicesavi .pulse-ring{
+    top: -5px;
+    left: -5px;
+  }
+
+  #voicesavi{
+    position:absolute;
+    bottom: 6%;
+    left: 44%;
+  }
+}
+
+@media screen and (max-device-width: 480px)
+    and (orientation: portrait) {
+      .btn {
+        border-radius: 100%;
+        width: 125px;
+        height: 125px;
+      }
+    
+      .pulse-ring {
+        content: '';
+        width: 125px;
+        height: 125px;
+        background: red;
+        border: 5px solid red;
+        border-radius: 50%;
+        position: absolute;
+        animation: pulsate infinite 1.5s;
+      }
+      
+      #voicesavi .pulse-ring{
+        top: -5px;
+        left: -5px;
+      }
+    
+      #voicesavi{
+        position:absolute;
+        bottom: 13%;
+        left: 35%;
+      }
+    }
+
+.type2{
+	background: red;
+}
+
+.type2:hover, .pulse-ring:hover{
+	background: #e60000;
+}
+
+.type2 .pulse-ring{
+	background: transparent;
+}
+
+
+#loading-outer {
+  background-color:#01aea1;
+  border-radius:50%;
+  display:block;
+  height:150px;
+  width:150px;
+  margin:-40px 0 0 -40px;
+  position:absolute;
+  text-align:center;
+  bottom: 10%;
+  left: 50%;
+
+  }
+  
+#loading-inner {
+  background-color:#25bab0;
+  border-radius:50%;
+  box-shadow:0 0 2px rgba(0,0,0,.05);
+  display:block;
+  height:100px;
+  left:50%;
+  top:50%;
+  margin:-50px 0 0 -50px;
+  position:absolute;
+  text-align:center;
+  width:100px;
+}
+  
+#loading-inner img {
+  bottom:0;
+  left:0;
+  margin:auto;
+  position:absolute;
+  right:0;
+  top:0;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  text-align: center;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: black;
+}
+
+#confirmBtn {
+  background-color: #4CAF50; 
+  color: white; 
+  padding: 10px 20px; 
+  font-size: 16px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s; 
+}
+
+#confirmBtn:hover {
+  background-color: #45a049; 
+}
+
+
+#cancelBtn {
+  background-color: #f44336; 
+  color: white; 
+  padding: 10px 20px; 
+  font-size: 16px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s; 
+}
+
+#cancelBtn:hover {
+  background-color: #d32f2f; 
+}
+
+#confirmBtn {
+  background-color: #4CAF50; 
+  color: white; 
+  padding: 10px 20px; 
+  font-size: 16px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s; 
+}
+
+#confirmBtn:hover {
+  background-color: #45a049; 
+}
+
+
+#cancelBtn {
+  background-color: #f44336; 
+  color: white; 
+  padding: 10px 20px; 
+  font-size: 16px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s; 
+}
+
+#cancelBtn:hover {
+  background-color: #d32f2f; 
+}
+
+

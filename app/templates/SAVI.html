@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <!-- Font -->
+        <link href='https://fonts.googleapis.com/css?family=Press Start 2P' rel='stylesheet'>
+    
+        <!-- Favicon-->
+        <title>SAVI</title>
+        <link rel="shortcut icon" href="../static/img/Logo/Logo8.png">
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.min.css'>
+        <link rel="stylesheet" href="../static/src/font-awesome/css/all.min.css">
+    
+        <!-- Main CSS-->
+        <link rel="stylesheet" href="../static/css/style.css">
+
+        <!-- Leaflet Map CSS-->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+    </head>
+
+    <body id="savi">
+        <div class="savi-title" >
+            <main class="savi-chat" id="chat">
+                <div class="msg left-msg">
+                    <div id = "Status_green"></div>
+                    <div id = "Status_red"></div>
+                    <div class="savi-img" id="openModalBtn" style="background-image: url(../static/img/Logo/Logo2.png)"></div>
+                    <div id="myModal" class="modal">
+                        <div class="modal-content">
+                          <span class="close" id="closeModalBtn">&times;</span>
+                          <h3>Apakah ingin pindah ke mode kendali penuh dengan suara?</h3>
+                          <button id="confirmBtn">Ya</button>
+                          <button id="cancelBtn">Tidak</button>
+                        </div>
+                    </div>
+                    <div class="savi-bubble">
+                        <div class="savi-info" >
+                            <div class="savi-info-name">SAVI</div>
+                            <div class="savi-info-time" id="time"></div>
+                        </div>
+            
+                        <div class="savi-text">Halo! SAVI disini, Ada yang bisa SAVI bantu?</div>
+                        <div id="map" hidden></div>
+                    </div>
+                </div>
+            </main>
+            <div class="savi-line"></div>
+            <form class="savi-input-div" id="forminput">
+                <input class="savi-input-message" name="message" type="text" id="message" placeholder="Type your message ..." autofocus />
+                <button class="savi-input-send" type="submit" onclick="sendMessage()">
+                <svg style="width:24px;height:24px">
+                    <path d="M2,21L23,12L2,3V10L17,12L2,14V21Z" />
+                </svg>
+                </button>
+                <button id="voicesavi" class="btn type2">
+                    <div id = "pulse" class="pulse-ring"></div>
+                    <img id="micc" src="../static/img/micoff.png" class="mic" alt="">
+                </button>
+            </form>
+        <div>
+        <script src="../static/js/script.js"></script>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src='../static/src/font-awesome/js/all.js'></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+        <script src="https://unpkg.com/webcam-easy/dist/webcam-easy.min.js"></script>
+        <script src="../static/src/bootstrap/js/bootstrap.min.js"></script>
+    </body>
+
+</html>
