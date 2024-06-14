@@ -4,10 +4,10 @@ SAVIBot merupakan chatbot berbahasa indonesia yang berguna sebagai asisten virtu
 ## Fitur-Fitur SAVIBot
 | Fitur              | Keterangan                                    |
 |--------------------|----------------------------------------------|
-| Integrasi API      | Mengintegrasikan proyek dengan API eksternal |
-| Autentikasi OAuth  | Sistem otentikasi menggunakan OAuth2         |
-| Penjadwalan Tugas  | Penjadwalan tugas dengan cron jobs           |
-| Antarmuka Pengguna | Antarmuka pengguna menggunakan React         |
+| Interaksi robot dengan manusia      | Mengintegrasikan proyek dengan API eksternal |
+| Informasi lokasi  | Sistem otentikasi menggunakan OAuth2         |
+| Informasi daya wahana  | Penjadwalan tugas dengan cron jobs           |
+| Informasi kecepatan wahana | Antarmuka pengguna menggunakan React         |
 
 
 ## Tampilan button untuk membuka chatroom
