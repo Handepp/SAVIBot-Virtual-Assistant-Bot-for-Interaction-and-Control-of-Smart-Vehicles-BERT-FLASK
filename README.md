@@ -1,5 +1,5 @@
 # SAVIBot
-SAVIBot merupakan chatbot berbahasa indonesia yang berguna sebagai asisten virtual untuk melakukan interaksi dan kendali pada wahana cerdas (Smart Vehicle) yang dinamakan SAVI.
+SAVIBot merupakan chatbot berbahasa indonesia yang berguna sebagai asisten virtual untuk melakukan interaksi dan kendali pada wahana cerdas (Smart Vehicle) yang dinamakan SAVI. Interaksi dengan chatbot dapat dilakukan dengan menggunakan suara dan juga ketikan teks.
 
 ## Tampilan button untuk membuka chatroom
 ![Landing](https://drive.google.com/uc?export=view&id=1ZfhT7_cFNYomojni0tPW3Iyyt24BEdEc)
