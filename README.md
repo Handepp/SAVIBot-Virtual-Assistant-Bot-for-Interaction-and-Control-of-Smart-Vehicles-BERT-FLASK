@@ -5,7 +5,8 @@ SAVIBot merupakan chatbot berbahasa indonesia yang berguna sebagai asisten virtu
 ![Landing](https://drive.google.com/uc?export=view&id=1ZfhT7_cFNYomojni0tPW3Iyyt24BEdEc)
 
 ## Tampilan Chatroom untuk percakapan umum dan mendapatkan informasi
-![Landing](https://drive.google.com/uc?export=view&id=12eqV2YOye_fP_S7P72vhtOsSASjAcVYT)
+<img src="https://drive.google.com/uc?export=view&id=12eqV2YOye_fP_S7P72vhtOsSASjAcVYT" width="400" alt="Deskripsi Gambar">
+
 
 
 ## Tampilan untuk melakukan kendali pada wahana cerdas SAVI
