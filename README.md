@@ -10,11 +10,9 @@ Tampilan Chatroom ini digunakan untuk melakukan percakapan umum dengan chatbot d
 <img src="https://drive.google.com/uc?export=view&id=15ro6P7OkUGvgO1S-s42V4rsSN1Pq_vFn" width="325" alt="chatroom_2"> 
 <img src="https://drive.google.com/uc?export=view&id=1y0euRICGdVL3dmpQUiYHR_zFKpNZxoag" width="325" alt="chatroom_3"> 
 
-
 ## Tampilan Chatroom 2
 Tampilan ini digunakan ketika ingin melakukan kendali pada wahana cerdas melalui chatbot SAVIBot
 ![chatroom_kendali](https://drive.google.com/uc?export=view&id=12rro2xjWDczNZbQWFUGorPx-yFRdEKFB)
-
 
 ## Responsive
 Tampilan chatbot dapat digunakan pada ketiga jenis perangkat, yaitu dekstop, tablet, dan handphone
