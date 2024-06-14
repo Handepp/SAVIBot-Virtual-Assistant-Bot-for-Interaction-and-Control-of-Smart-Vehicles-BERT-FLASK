@@ -1,15 +1,6 @@
 # SAVIBot
 SAVIBot merupakan chatbot berbahasa indonesia yang berguna sebagai asisten virtual untuk melakukan interaksi dan kendali pada wahana cerdas (Smart Vehicle) yang dinamakan SAVI.
 
-## Fitur-Fitur SAVIBot
-| Fitur              | Keterangan                                    |
-|--------------------|----------------------------------------------|
-| Interaksi robot dengan manusia      | Mengintegrasikan proyek dengan API eksternal |
-| Informasi lokasi  | Sistem otentikasi menggunakan OAuth2         |
-| Informasi daya wahana  | Penjadwalan tugas dengan cron jobs           |
-| Informasi kecepatan wahana | Antarmuka pengguna menggunakan React         |
-
-
 ## Tampilan button untuk membuka chatroom
 ![Landing](https://drive.google.com/uc?export=view&id=1ZfhT7_cFNYomojni0tPW3Iyyt24BEdEc)
 
@@ -28,3 +19,4 @@ Tampilan chatbot dapat digunakan pada ketiga jenis perangkat, yaitu dekstop, tab
 <img src="https://drive.google.com/uc?export=view&id=1oASEyxbS4aMx4x2653hxwyakw0LCJjzO" width="200" alt="Responsiv_1"> 
 <img src="https://drive.google.com/uc?export=view&id=1RsnEcbzGIwWpt0UspOe2hrGfconeeWFm" width="200" alt="Responsiv_2"> 
 <img src="https://drive.google.com/uc?export=view&id=1LoaErCMgw0B5EbtxzmCAVg2cH_G1e_yv" width="200" alt="Responsiv_3">
+
