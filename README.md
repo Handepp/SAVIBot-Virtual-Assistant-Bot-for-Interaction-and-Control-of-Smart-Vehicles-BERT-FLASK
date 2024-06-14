@@ -5,7 +5,7 @@ SAVIBot merupakan chatbot berbahasa indonesia yang berguna sebagai asisten virtu
 ![Landing](https://drive.google.com/uc?export=view&id=1ZfhT7_cFNYomojni0tPW3Iyyt24BEdEc)
 
 ## Tampilan Chatroom untuk percakapan umum dan mendapatkan informasi
-<img src="https://drive.google.com/uc?export=view&id=12eqV2YOye_fP_S7P72vhtOsSASjAcVYT" width="350" alt="chatroom_1"> <img src="https://drive.google.com/uc?export=view&id=15ro6P7OkUGvgO1S-s42V4rsSN1Pq_vFn" width="325" alt="chatroom_2"> <img src="https://drive.google.com/uc?export=view&id=1y0euRICGdVL3dmpQUiYHR_zFKpNZxoag" width="325" alt="chatroom_3"> 
+<img src="https://drive.google.com/uc?export=view&id=12eqV2YOye_fP_S7P72vhtOsSASjAcVYT" width="340" alt="chatroom_1"> <img src="https://drive.google.com/uc?export=view&id=15ro6P7OkUGvgO1S-s42V4rsSN1Pq_vFn" width="325" alt="chatroom_2"> <img src="https://drive.google.com/uc?export=view&id=1y0euRICGdVL3dmpQUiYHR_zFKpNZxoag" width="325" alt="chatroom_3"> 
 
 
 
