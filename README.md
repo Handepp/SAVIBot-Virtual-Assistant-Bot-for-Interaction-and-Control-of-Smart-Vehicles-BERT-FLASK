@@ -6,7 +6,9 @@ SAVIBot merupakan chatbot berbahasa indonesia yang berguna sebagai asisten virtu
 
 ## Tampilan Chatroom 1
 Tampilan Chatroom ini digunakan untuk melakukan percakapan umum dengan chatbot dan mendapatkan informasi mengenai wahana SAVI melalui chatbot
-<img src="https://drive.google.com/uc?export=view&id=12eqV2YOye_fP_S7P72vhtOsSASjAcVYT" width="340" alt="chatroom_1"> <img src="https://drive.google.com/uc?export=view&id=15ro6P7OkUGvgO1S-s42V4rsSN1Pq_vFn" width="325" alt="chatroom_2"> <img src="https://drive.google.com/uc?export=view&id=1y0euRICGdVL3dmpQUiYHR_zFKpNZxoag" width="325" alt="chatroom_3"> 
+<img src="https://drive.google.com/uc?export=view&id=12eqV2YOye_fP_S7P72vhtOsSASjAcVYT" width="340" alt="chatroom_1"> 
+<img src="https://drive.google.com/uc?export=view&id=15ro6P7OkUGvgO1S-s42V4rsSN1Pq_vFn" width="325" alt="chatroom_2"> 
+<img src="https://drive.google.com/uc?export=view&id=1y0euRICGdVL3dmpQUiYHR_zFKpNZxoag" width="325" alt="chatroom_3"> 
 
 
 ## Tampilan Chatroom 2
